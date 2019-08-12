@@ -67,3 +67,25 @@ function isEven(input) {
         return false;
     }
 }
+
+console.log(isEven());
+
+function isVowel(input) {
+
+    if (isNaN(input) === false){
+        return false;
+    }else if (input === undefined || input === true || input === false){
+        return false;
+    }else if ("aeiouAEIOU".indexOf(input) != -1){
+        return true;
+    }else{
+        return false;
+    }
+}
+
+
+
+
+
+
+
