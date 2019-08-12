@@ -69,7 +69,7 @@ console.log(isVowel());
 
 
 function add(a,b) {
-    if(isNaN(a) === true || isNaN(b) === true) {
+    if(isNaN(a) === true || isNaN(b) === true || a === null || b === null) {
         return isNaN;
     }else {
         return parseInt(a) + parseInt(b);
