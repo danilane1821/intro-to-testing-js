@@ -30,6 +30,19 @@ describe ("sayHello", function() {
     it('should return the string "Hello, Pat! when passed Pat', function () {
         expect(sayHello("Pat")).toBe("Hello, Pat!");
     });
+    it('should return the string "Hello, World!" when passed sayHello()', function() {
+        expect(sayHello()).toBe("Hello, World!");
+    });
+    it('should return the string "Hello, World!" when passed booleab true', function() {
+        expect(sayHello(true)).toBe("Hello, World!");
+    });
+    it('should return the string "Hello, World!" when passed boolean false', function() {
+        expect(sayHello(false)).toBe("Hello, World!");
+    });
+    it('should return the string "Hello, World!" when passed null', function() {
+        expect(sayHello(null)).toBe("Hello, World!");
+    });
+
 
 });
 

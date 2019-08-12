@@ -17,15 +17,23 @@ function sum (a, b) {
     return a + b;
 }
 
-function sayHello(input) {
-    return "Hello " + input + "!";
+function sayHello(str) {
     // if(str === "Alex") {
     //     return "Hello, Alex!";
-    // }else if (str === "Pat"){
+    // }else if (str === "Pat") {
     //     return "Hello, Pat!";
-    // }else {
+    // } else if(str === undefined) {
+    //     return "Hello, World!";
+    // }else if(str === "Jane"){
     //     return "Hello, Jane!";
+    // }else if (str === undefined || str === true || str === false || str === null){
+    //     return "Hello, World!";
     // }
+    if (typeof str === "string"){
+        return "Hello, " + str + "!";
+    } else if (str === undefined || str === true || str === false || str === null){
+        return "Hello, World!";
+    }
 }
 
-console.log(sayHello());
+console.log(sayHello("Alex"));
