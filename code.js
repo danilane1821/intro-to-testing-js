@@ -17,10 +17,15 @@ function sum (a, b) {
     return a + b;
 }
 
-function sayHello(str) {
-    if(str === "Alex"){
-        return "Hello, Alex!";
-    }else {
-        return "Hello, Jane!";
-    }
+function sayHello(input) {
+    return "Hello " + input + "!";
+    // if(str === "Alex") {
+    //     return "Hello, Alex!";
+    // }else if (str === "Pat"){
+    //     return "Hello, Pat!";
+    // }else {
+    //     return "Hello, Jane!";
+    // }
 }
+
+console.log(sayHello());
