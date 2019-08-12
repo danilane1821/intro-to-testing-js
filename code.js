@@ -17,6 +17,10 @@ function sum (a, b) {
     return a + b;
 }
 
-function sayHello() {
-    return "";
+function sayHello(str) {
+    if(str === "Alex"){
+        return "Hello, Alex!";
+    }else {
+        return "Hello, Jane!";
+    }
 }
