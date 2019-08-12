@@ -148,3 +148,15 @@ describe("isVowel", function(){
         expect(isVowel()).toBe(false);
     });
 });
+
+describe("add", function(){
+    it('should be a defined function', function(){
+        expect(typeof add).toBe('function');
+    });
+    it('should return 5 when passed the numbers 2 and 3', function(){
+        expect(add(2, 3)).toBe(5);
+    });
+    it('should return -12 when passed the numbers -3 and -9', function(){
+        expect(add(-3, -9)).toBe(-12);
+    });
+});

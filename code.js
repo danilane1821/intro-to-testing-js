@@ -83,9 +83,13 @@ function isVowel(input) {
     }
 }
 
+console.log(isVowel());
 
 
 
+function add(input1, input2){
+    return input1 +input2;
+}
 
 
 
