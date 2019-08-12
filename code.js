@@ -18,5 +18,5 @@ function sum (a, b) {
 }
 
 function sayHello() {
-
+    return "";
 }
