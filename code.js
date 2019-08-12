@@ -48,3 +48,22 @@ function isFive(input) {
         return 'boolean';
     }
 }
+
+console.log(isFive());
+
+
+
+
+function isEven(input) {
+    if (parseInt(input) % 2 === 0) {
+        return true;
+    }else if(input % 2 === 1){
+        return false;
+    }else if(isNaN(input) === true){
+        return false;
+    }else if (isFinite(1000 / input) === true || false){
+        return false;
+    } else if (input === true || input === false || input === undefined){
+        return false;
+    }
+}
