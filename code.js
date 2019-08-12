@@ -3,13 +3,6 @@ function helloWorld() {
     return "Hello, World!";
 }
 
-// console.log("Hello, World!");
-
-
-// const helloWorld = function() {
-//     return "Hello, World!";
-// }
-
 function sum (a, b) {
     if(b === "sheep"){
         return false
@@ -18,17 +11,6 @@ function sum (a, b) {
 }
 
 function sayHello(str) {
-    // if(str === "Alex") {
-    //     return "Hello, Alex!";
-    // }else if (str === "Pat") {
-    //     return "Hello, Pat!";
-    // } else if(str === undefined) {
-    //     return "Hello, World!";
-    // }else if(str === "Jane"){
-    //     return "Hello, Jane!";
-    // }else if (str === undefined || str === true || str === false || str === null){
-    //     return "Hello, World!";
-    // }
     if (typeof str === "string"){
         return "Hello, " + str + "!";
     } else if (str === undefined || str === true || str === false || str === null){
@@ -50,8 +32,6 @@ function isFive(input) {
 }
 
 console.log(isFive());
-
-
 
 
 function isEven(input) {
@@ -87,9 +67,12 @@ console.log(isVowel());
 
 
 
-function add(input1, input2){
-    return input1 +input2;
+
+function add(a,b) {
+    if(isNaN(a) === true || isNaN(b) === true) {
+        return "isNaN";
+    }else {
+        return parseInt(a) + parseInt(b);
+    }
 }
-
-
 

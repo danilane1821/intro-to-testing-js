@@ -159,4 +159,19 @@ describe("add", function(){
     it('should return -12 when passed the numbers -3 and -9', function(){
         expect(add(-3, -9)).toBe(-12);
     });
+    it('should return 11 when passed the string "5" and number 6', function(){
+        expect(add("5", 6)).toBe(11);
+    });
+    it('should return 6 when passed the string "-4" and the string "10"', function(){
+        expect(add("-4", "10")).toBe(6);
+    });
+    it('should return NaN when passed the string "Banana" and the string "Split"', function(){
+        expect(add("Banana", "Split")).toBe(isNaN);
+    });
+    it('should return NaN when passed the number 2 and the string "Apples"', function(){
+        expect(add(2, "Apples")).toBe(isNaN);
+    });
+    it('should return NaN when passed add()', function(){
+        expect(add()).toBe(isNaN);
+    });
 });
