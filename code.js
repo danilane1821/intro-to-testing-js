@@ -36,4 +36,15 @@ function sayHello(str) {
     }
 }
 
-console.log(sayHello("Alex"));
+console.log(sayHello());
+
+
+function isFive(input) {
+    if (input === 5) {
+        return true;
+    }else if (typeof input === 'string'){
+         return false;
+    }else {
+        return 'boolean';
+    }
+}
